@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&display=swap');
+
+body {
+  font-family: 'Afacad Flux', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f9;
+}
+
+.qr-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.qr-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.qr-card h1 {
+  margin-bottom: 20px;
+  color: #333;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+.qr-card input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 80%;
+  transition: border-color 0.3s ease;
+}
+
+.qr-card input:focus {
+  border-color: #5cb85c;
+  outline: none;
+}
+
+.qr-card button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: #5cb85c;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.qr-card button:hover {
+  background-color: #4cae4c;
+  transform: translateY(-2px);
+}
+
+#qrcode {
+  display: none;
+  width: 128px;
+  height: 128px;
+  margin-left: 60px;
+  margin-top: 20px;
+  transition: opacity 0.5s ease;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
