@@ -7,7 +7,7 @@ body {
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f4f4f9;
+  background-color: #EEEEEE;
 }
 
 .qr-card {
@@ -33,30 +33,14 @@ body {
 .qr-card input {
   padding: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid #BC8CF2;
   width: 80%;
   transition: border-color 0.3s ease;
 }
 
 .qr-card input:focus {
-  border-color: #5cb85c;
+  border-color: #333;
   outline: none;
-}
-
-.qr-card button {
-  margin-top: 10px;
-  padding: 10px 20px;
-  border: none;
-  background-color: #5cb85c;
-  color: white;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.qr-card button:hover {
-  background-color: #4cae4c;
-  transform: translateY(-2px);
 }
 
 #qrcode {

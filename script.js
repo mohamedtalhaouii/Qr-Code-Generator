@@ -8,6 +8,8 @@ function generateQRCode(text) {
     text: text,
     width: 128,
     height: 128,
+    colorDark: "#AA14F0",
+    //colorLight: "#ffffff",
   });
 
   
